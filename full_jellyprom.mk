@@ -14,9 +14,20 @@
 # limitations under the License.
 #
 
-# Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+## Specify phone tech before including full_phone
 
-$(call inherit-product, device/unihertz/jellypro/full_jellypro.mk)
+# Release name
+PRODUCT_RELEASE_NAME := jellypro
 
-PRODUCT_NAME := omni_jellypro
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Device identifier. This must come after all inclusions
+PRODUCT_DEVICE := jellyprom
+PRODUCT_NAME := full_jellyprom
+PRODUCT_BRAND := unihertz
+PRODUCT_MODEL := Jelly-Pro
+PRODUCT_MANUFACTURER := Unihertz
+
+# Available languages
+PRODUCT_LOCALES := en_US en_GB ru_RU uk_UA tr_TR sk_SK vi_VN fr_FR ar_EG

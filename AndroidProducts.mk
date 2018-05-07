@@ -15,5 +15,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_jellypro.mk
+    $(LOCAL_DIR)/omni_jellyprom.mk
 

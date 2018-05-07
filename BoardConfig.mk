@@ -16,8 +16,8 @@
 #
 
 # Platform
-TARGET_BOARD_PLATFORM := mt6737t
-TARGET_BOOTLOADER_BOARD_NAME := mt6737t
+TARGET_BOARD_PLATFORM := mt6737m
+TARGET_BOOTLOADER_BOARD_NAME := mt6737m
 TARGET_NO_BOOTLOADER := true
 TARGET_CPU_SMP := true
 ARCH_ARM_HAVE_NEON := true
@@ -51,7 +51,7 @@ BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.selinux=permissive
 BOARD_MKBOOTIMG_ARGS := --board 1494378543 --ramdisk_offset 0x03f88000 --second_offset 0x00e88000 --tags_offset 0x0df88000
-TARGET_PREBUILT_KERNEL := device/unihertz/jellypro/prebuilt/kernel.gz
+TARGET_PREBUILT_KERNEL := device/unihertz/jellyprom/prebuilt/kernel.gz
 
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
